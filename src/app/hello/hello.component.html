@@ -1,0 +1,31 @@
+<h1 (click) = "clicked()">hello {{name}}!</h1>
+<br>
+
+<p>{{cont}}</p>
+<button (click)="increment()">+1</button>
+<button (click)="decrement()">-1</button>
+<br><br><br>
+
+<ul *ngIf="isVisible">
+    <li *ngFor="let item of lista">
+        Nome:  {{item.name}} / Idade: {{item.idade}}
+    </li>
+</ul>
+
+<button (click)="changeVisibility()">{{status}}</button>
+<br><br><br>
+
+<div>
+    <!--PESQUISAR FORM CONTROL NAME / FORM GROUP-->
+    <label>Nome</label>
+    <input type="text" [(ngModel)]="nome">
+    <button (click)="submit()">submit</button>
+</div>
+
+<br><br><br>
+
+<button (click)="buscar()">Buscar Endereco</button>
+
+<br><br><br>
+
+<button (click)="mudarRota()">Mudar rota</button>
